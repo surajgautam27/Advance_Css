@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main_div{
+            width:100vw;
+            height:100vh;
+            background-color: rgb(125, 204, 178);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        p{
+            color: #fff;
+            font-size: 1.1rem;
+            line-height: 25px;
+            font-weight: lighter;
+        }
+        p.first-child::first-letter{
+            color:rgb(162, 255, 12);
+            font-size: 5rem;
+            float: left;
+            display: block;
+            margin: 0 15px 0 0;
+            line-height: 0.5;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="main_div">
+        <div class="center_div">
+            <p class="first-child">
+                Lorem ipsum dolor, sit amet consectetur 
+                adipisicing elit. Quae ratione obcaecati
+                 sint quisquam qui id impedit cum accusantium
+                  consequatur! Mollitia, amet delectus nostrum adipisci necessitatibus nobis id molestias alias dolores.
+            </p>
+            <br>
+            <p>    Lorem ipsum dolor, sit amet consectetur 
+                adipisicing elit. Quae ratione obcaecati
+                 sint quisquam qui id impedit cum accusantium
+                  consequatur! Mollitia, amet delectus nostrum adipisci necessitatibus nobis id molestias alias dolores.
+            </p>
+        <p>   <br>    Lorem ipsum dolor, sit amet consectetur 
+            adipisicing elit. Quae ratione obcaecati
+             sint quisquam qui id impedit cum accusantium
+              consequatur! Mollitia, amet delectus nostrum adipisci necessitatibus nobis id molestias alias dolores.
+        </p>
+     
+        </div>
+    </div>
+</body>
+</html>
